@@ -3,10 +3,6 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-/* Taken from The Java Tutorial (Campione and Walrath)
-/* Further modifications made to accommodate lab and home running
-          Simon Taylor October 2011 */
-
 public class Client {
     public static void main(String[] args) throws IOException {
 
@@ -16,12 +12,6 @@ public class Client {
         PrintWriter out = null;
         BufferedReader in = null;
         ObjectOutputStream objectOut = null;
-
-
-        // Change XXXX to the name of the computer that your kkserver is running
-        // Change port 4444 to another number so you dont run into someone elses!
-        // The code then connects the input and output
-
 
         try {
             socket = new Socket("localhost", 4444);
